@@ -26,7 +26,7 @@ collections:
         required: false
         fields:
           - { label: "Title", name: "title", widget: "string"}
-          - { label: "Icon", name: "icon", widget: "string", required: false}
+          - { label: "Icon", name: "icon", widget: "select", options: ["smile", "heart", "link-external"], required: false}
           - { label: "Subtitle", name: "subtitle", widget: "string", required: false}
       - { label: "Disclaimer", name: "disclaimer", widget: "markdown", required: false}
       - label: "Paragraph"
