@@ -20,10 +20,10 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Hero Image", name: "thumbnail", widget: "image"}
+      - { label: "Hero Image", name: "thumbnail", widget: "image", required: false}
       - { label: "Title", name: "title", widget: "string"}
       - { label: "Subtitle", name: "subtitle", widget: "string"}
-      - { label: "Disclaimer", name: "disclaimer", widget: "markdown"}
+      - { label: "Disclaimer", name: "disclaimer", widget: "markdown", required: false}
       - label: 'Block'
         name: "block"
         widget: list
