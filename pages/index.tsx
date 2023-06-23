@@ -1,6 +1,8 @@
 import Head from "next/head";
+import Script from "next/script";
 import { Component } from "react";
 import { attributes, react as HomeContent } from "../content/home.md";
+import Header from "../components/Header";
 
 export default class Home extends Component {
   render() {
@@ -8,10 +10,10 @@ export default class Home extends Component {
     return (
       <>
         <Head>
-          <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+          <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></Script>
         </Head>
         <article>
-          <h1>{title}</h1>
+          <Header title={title} />
           <HomeContent />
           <ul>
             {cats.map((cat, k) => (
