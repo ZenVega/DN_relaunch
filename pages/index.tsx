@@ -13,7 +13,7 @@ export default class Home extends Component {
           <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></Script>
         </Head>
         <article>
-          <Header title={title} />
+          <Header title={title} icon="faTemperatureHigh" />
           <HomeContent />
           <ul>
             {cats.map((cat, k) => (
