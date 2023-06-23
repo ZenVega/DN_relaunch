@@ -18,8 +18,17 @@ collections:
     folder: "content/projects"
     create: true
     slug: "{{slug}}"
+    preview_path: previews/{{slug}}
     fields:
-      - { label: "Hero Image", name: "thumbnail", widget: "image", required: false}
+      - label: "Hero Image"
+        name: "thumbnail"
+        widget: "object"
+        required: false
+        fields:
+          - { label: "Image", name: "image", widget: "image"}
+          - { label: "Alt Text", name: "alt", widget: "string", required: false}
+          - { label: "Caption", name: "caption", widget: "string", required: false}
+          - { label: "Publikation", name: "publication", widget: "boolean", default: false}
       - label: "Title"
         name: "title"
         widget: "object"
@@ -29,28 +38,31 @@ collections:
           - { label: "Icon", name: "icon", widget: "select", options: ["smile", "heart", "link-external"], required: false}
           - { label: "Subtitle", name: "subtitle", widget: "string", required: false}
       - { label: "Disclaimer", name: "disclaimer", widget: "markdown", required: false}
-      - label: "Paragraph"
-        name: "paragraph"
-        multiple: true
-        widget: "markdown"
+      - label: "Content Blocks"
+        name: "content_blocks"
+        widget: "list"
         required: false
         fields:
-          - { label: "Title", name: "title", widget: "string", required: false}
-          - { label: "Body", name: "body", widget: "markdown", required: false}
-      - label: "Image"
-        name: "in_text_image"
-        multiple: true
-        widget: "image"
-        required: false
-        fields:
-          - { label: "Alt Text", name: "alt", widget: "string", required: false}
-          - { label: "Caption", name: "caption", widget: "string", required: false}
-      - label: "External Link"
-        name: "external_link"
-        multiple: true
-        widget: "object"
-        required: false
-        fields:
-          - { label: "Title", name: "title", widget: "string", required: false}
-          - { label: "Subtitle", name: "subtitle", widget: "string", required: false}
-          - { label: "URL", name: "url", widget: "string", required: false}
+        - label: "Paragraph"
+          name: "paragraph"
+          widget: "object"
+          required: false
+          fields:
+            - { label: "Title", name: "title", widget: "string", required: false}
+            - { label: "Body", name: "body", widget: "markdown", required: false}
+        - label: "Image"
+          name: "in_text_image"
+          widget: "object"
+          required: false
+          fields:
+            - { label: "Image", name: "image", widget: "image"}
+            - { label: "Alt Text", name: "alt", widget: "string", required: false}
+            - { label: "Caption", name: "caption", widget: "string", required: false}
+        - label: "External Link"
+          name: "external_link"
+          widget: "object"
+          required: false
+          fields:
+            - { label: "Title", name: "title", widget: "string", required: false}
+            - { label: "Subtitle", name: "subtitle", widget: "string", required: false}
+            - { label: "URL", name: "url", widget: "string", required: false}

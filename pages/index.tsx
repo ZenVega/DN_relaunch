@@ -6,14 +6,14 @@ import Header from "../components/Header";
 
 export default class Home extends Component {
   render() {
-    let { title, cats } = attributes;
+    let { title, cats, icon } = attributes;
     return (
       <>
         <Head>
           <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></Script>
         </Head>
         <article>
-          <Header title={title} icon="faTemperatureHigh" />
+          <Header title={title} icon={icon} />
           <HomeContent />
           <ul>
             {cats.map((cat, k) => (
