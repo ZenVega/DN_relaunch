@@ -1,5 +1,5 @@
 backend:
-  name: test-repo # git-gateway
+  name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
 media_folder: public/img
 public_folder: img
@@ -14,9 +14,36 @@ collections:
         - { label: "Title", name: "title", widget: "string"}
         - { label: "Publish Date", name: "date", widget: "datetime" }
         - { label: "Body", name: "body", widget: "markdown"}
-        - label: 'Cats'
-          name: "cats"
-          widget: list
-          fields:
-            - { label: "Name", name: "name", widget: "string"}
-            - { label: "Description", name: "description", widget: "text"}
+  - name: "projects"
+    label: "Projects"
+    folder: "content/projects"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Hero Image", name: "thumbnail", widget: "image"}
+      - { label: "Title", name: "title", widget: "string"}
+      - { label: "Subtitle", name: "subtitle", widget: "string"}
+      - { label: "Disclaimer", name: "disclaimer", widget: "markdown"}
+      - label: 'Block'
+        name: "block"
+        widget: list
+        fields:
+          - label: "Paragraph"
+            name: "paragraph"
+            widget: "markdown"
+            fields:
+              - { label: "Title", name: "title", widget: "string"}
+              - { label: "Body", name: "body", widget: "markdown"}
+          - label: "Image"
+            name: "in_text_image" 
+            widget: "image"
+            fields:
+              - { label: "Alt Text", name: "alt", widget: "string"}
+              - { label: "Caption", name: "caption", widget: "string"}
+          - label: "External Link"
+            name: "external_link"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string"}
+              - { label: "Subtitle", name: "subtitle", widget: "string"}
+              - { label: "URL", name: "url", widget: "string"}
