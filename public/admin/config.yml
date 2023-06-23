@@ -31,13 +31,15 @@ collections:
       - { label: "Disclaimer", name: "disclaimer", widget: "markdown", required: false}
       - label: "Paragraph"
         name: "paragraph"
+        multiple: true
         widget: "markdown"
         required: false
         fields:
           - { label: "Title", name: "title", widget: "string", required: false}
           - { label: "Body", name: "body", widget: "markdown", required: false}
       - label: "Image"
-        name: "in_text_image" 
+        name: "in_text_image"
+        multiple: true
         widget: "image"
         required: false
         fields:
@@ -45,6 +47,7 @@ collections:
           - { label: "Caption", name: "caption", widget: "string", required: false}
       - label: "External Link"
         name: "external_link"
+        multiple: true
         widget: "object"
         required: false
         fields:
