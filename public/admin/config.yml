@@ -20,7 +20,11 @@ collections:
     slug: "{{slug}}"
     preview_path: previews/{{slug}}
     fields:
-      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Title ( dieser gibt auch die route in der URL an )",
+          name: "title",
+          widget: "string",
+        }
       - label: "Hero Image"
         name: "thumbnail"
         widget: "object"
