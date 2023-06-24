@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 
 interface ProjectImageProps {
   src: string;
@@ -15,8 +14,8 @@ const ProjectImage: React.FC<ProjectImageProps> = ({
 }: ProjectImageProps) => {
   return (
     <div className="w-full h-full relative mt-4">
-      <Image
-        src={"/../public/" + src}
+      <img
+        src={"/" + src}
         alt={alt}
         width={0}
         height={0}
