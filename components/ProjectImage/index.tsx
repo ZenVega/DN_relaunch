@@ -14,7 +14,7 @@ const ProjectImage: React.FC<ProjectImageProps> = ({
   publication = false,
 }: ProjectImageProps) => {
   return (
-    <div className="w-full h-full relative">
+    <div className="w-full h-full relative mt-4">
       <Image
         src={"/../public/" + src}
         alt={alt}
@@ -23,7 +23,9 @@ const ProjectImage: React.FC<ProjectImageProps> = ({
         sizes="100vw"
         style={{ width: "100%", height: "auto" }}
       />
-      {caption && <p className="text-right text-xs">© {caption}</p>}
+      {caption && (
+        <p className="text-right text-xs font-light mt-1">© {caption}</p>
+      )}
     </div>
   );
 };

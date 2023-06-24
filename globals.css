@@ -2,6 +2,71 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Hanken Grotesk';
+  src: url('/fonts/Hanken_Grotesk/HankenGrotesk-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hanken Grotesk';
+  src: url('/fonts/Hanken_Grotesk/HankenGrotesk-SemiBold.ttf') format('truetype');
+  font-weight: semibold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hanken Grotesk';
+  src: url('/fonts/Hanken_Grotesk/HankenGrotesk-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hanken Grotesk';
+  src: url('/fonts/Hanken_Grotesk/HankenGrotesk-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hanken Grotesk';
+  src: url('/fonts/Hanken_Grotesk/HankenGrotesk-Light.ttf') format('truetype');
+  font-weight: light;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter/Inter-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter/Inter-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter/Inter-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter/Inter-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+
 * {
   box-sizing: border-box;
+  font-family: Hanken Grotesk, sans-serif;
 }

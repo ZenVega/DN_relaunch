@@ -29,14 +29,16 @@ const Header: React.FC<HeaderProps> = ({
 }: HeaderProps) => {
   return (
     <>
-      <h1 className="text-3xl font-bold">{title}</h1>
+      <h1 className="text-2xl font-extrabold font-inter leading-6">{title}</h1>
       {icon && (
         <FontAwesomeIcon
           icon={getIcon(icon)}
           // style={{ fontSize: 100, color: "blue" }}
         />
       )}
-      {subHeader && <h2>{subHeader}</h2>}
+      {subHeader && (
+        <h2 className="text-base leading-4 font-semibold mt-1">{subHeader}</h2>
+      )}
     </>
   );
 };

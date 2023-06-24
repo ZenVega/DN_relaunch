@@ -35,7 +35,7 @@ export default function ProjectPage({ html, ...meta }: Props & any) {
       <Spacer height={6} />
       {/* TODO: HeroImage */}
       <Header title={meta.headline.title} subHeader={meta.headline.subtitle} />
-      {meta.disclaimer && <p>{meta.disclaimer}</p>}
+      {meta.disclaimer && <p className="mt-4">{meta.disclaimer}</p>}
       {meta.content_blocks &&
         meta.content_blocks.map((block, index) => (
           <div key={index}>

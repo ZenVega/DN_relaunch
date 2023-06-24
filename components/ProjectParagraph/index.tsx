@@ -12,7 +12,6 @@ const ProjectParagraph: React.FC<ProjectParagraphProps> = ({
   return (
     <div>
       {title && <strong>{title}</strong>}
-      <br />
       <p>{body}</p>
     </div>
   );
