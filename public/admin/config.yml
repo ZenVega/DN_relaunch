@@ -20,6 +20,7 @@ collections:
     slug: "{{slug}}"
     preview_path: previews/{{slug}}
     fields:
+      - { label: "Title", name: "title", widget: "string" }
       - label: "Hero Image"
         name: "thumbnail"
         widget: "object"
@@ -44,10 +45,9 @@ collections:
               widget: "boolean",
               default: false,
             }
-      - label: "Title"
-        name: "title"
+      - label: "Headline"
+        name: "headline"
         widget: "object"
-        required: false
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - {
