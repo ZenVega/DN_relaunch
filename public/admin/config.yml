@@ -84,7 +84,12 @@ collections:
             widget: "object"
             required: false
             fields:
-              - { label: "Image", name: "image", widget: "image" }
+              - {
+                  label: "Image",
+                  name: "image",
+                  widget: "image",
+                  required: false,
+                }
               - {
                   label: "Alt Text",
                   name: "alt",
@@ -101,6 +106,12 @@ collections:
                   label: "Publikation",
                   name: "publication",
                   widget: "boolean",
+                  default: false,
+                }
+              - {
+                  label: "Publikation link",
+                  name: "publication_link",
+                  widget: "string",
                   default: false,
                 }
           - label: "External Link"
