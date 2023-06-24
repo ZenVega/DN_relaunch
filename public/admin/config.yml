@@ -106,17 +106,12 @@ collections:
                   widget: "string",
                   required: false,
                 }
+
               - {
-                  label: "Publikation",
-                  name: "publication",
-                  widget: "boolean",
-                  default: false,
-                }
-              - {
-                  label: "Publikation link",
+                  label: "Publikation link (wenn dieser vorhanden ist wird das image zum Link und das styling angepasst)",
                   name: "publication_link",
                   widget: "string",
-                  default: false,
+                  required: false,
                 }
           - label: "External Link"
             name: "external_link_in_text"

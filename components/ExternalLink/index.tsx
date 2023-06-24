@@ -13,16 +13,22 @@ const ExternalLink: React.FC<ExternalLinkProps> = ({
   title,
   subTitle,
 }: ExternalLinkProps) => {
+  console.log(href, title, subTitle);
   return (
-    <a target="_blanc" href={href} className="mb-4 relative block">
+    <a
+      target="_blanc"
+      href={href}
+      className="mb-4 relative flex flex-col gap-1"
+    >
       <span className="text-2xl font-bold font-inter leading-6">
         {title}
         <FontAwesomeIcon
           icon={faExternalLinkAlt}
           style={{ fontSize: 12, paddingBottom: 6, marginLeft: 6 }}
-        />
+        />{" "}
+        <br />
       </span>
-      {subTitle && <span>{subTitle}</span>}
+      {subTitle && <span className="leading-4">{subTitle}</span>}
     </a>
   );
 };

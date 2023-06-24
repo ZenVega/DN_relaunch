@@ -34,8 +34,19 @@ export default function ProjectPage({ html, ...meta }: Props & any) {
   return (
     <div>
       <Spacer height={6} />
-      {/* TODO: HeroImage */}
-      <Header title={meta.headline.title} subHeader={meta.headline.subtitle} />
+      {meta.thumbnail && (
+        <ProjectImage
+          src={meta.thumbnail.image}
+          alt={meta.thumbnail.alt}
+          publication_link={meta.thumbnail.publication_link}
+          hero
+        />
+      )}
+      <Header
+        title={meta.headline.title}
+        subHeader={meta.headline.subtitle}
+        icon={meta.headline.icon}
+      />
       {meta.disclaimer && <p className="mt-4">{meta.disclaimer}</p>}
       {meta.content_blocks &&
         meta.content_blocks.map((block, index) => (
@@ -44,7 +55,7 @@ export default function ProjectPage({ html, ...meta }: Props & any) {
               <ProjectImage
                 src={block.in_text_image.image}
                 alt={block.in_text_image.alt}
-                publication={block.in_text_image.publication}
+                publication_link={block.in_text_image.publication_link}
                 caption={block.in_text_image.caption}
               />
             )}
@@ -63,7 +74,15 @@ export default function ProjectPage({ html, ...meta }: Props & any) {
             )}
           </div>
         ))}
-      {/* <div dangerouslySetInnerHTML={{ __html: html }} /> */}
+      {meta.external_links &&
+        meta.external_links.map((link, index) => (
+          <ExternalLink
+            key={index}
+            href={link.external_link.url}
+            title={link.external_link.title}
+            subTitle={link.external_link.subtitle}
+          />
+        ))}
     </div>
   );
 }
