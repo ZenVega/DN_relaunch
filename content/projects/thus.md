@@ -19,7 +19,8 @@ content_blocks:
   - content_block_title: Content Block
     in_text_image:
       publication: false
-      image: img/screenshot-2023-06-08-at-16.17.39.png
+      image: ""
+      publication_link: no_link
 external_links:
   - external_link:
       title: Farewell
