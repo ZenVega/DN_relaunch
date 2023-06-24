@@ -8,8 +8,5 @@ module.exports = {
     return cfg;
   },
   pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
-  images: {
-    unoptimized: true,
-  },
   reactStrictMode: true,
 };
