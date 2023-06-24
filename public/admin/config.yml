@@ -1,18 +1,18 @@
 backend:
   name: git-gateway
-  branch: main # Branch to update (optional; defaults to master)
+  branch: main
 media_folder: public/img
 public_folder: img
 collections:
   - name: "pages"
     label: "Pages"
     files:
-    - label: "Home"
-      name: "home"
-      file: "content/home.md"
-      fields:
-        - { label: "Title", name: "title", widget: "string", required: false}
-        - { label: "Body", name: "body", widget: "markdown", required: false}
+      - label: "Home"
+        name: "home"
+        file: "content/home.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string", required: false }
+          - { label: "Body", name: "body", widget: "markdown", required: false }
   - name: "projects"
     label: "Projects"
     folder: "content/projects"
@@ -25,44 +25,133 @@ collections:
         widget: "object"
         required: false
         fields:
-          - { label: "Image", name: "image", widget: "image"}
-          - { label: "Alt Text", name: "alt", widget: "string", required: false}
-          - { label: "Caption", name: "caption", widget: "string", required: false}
-          - { label: "Publikation", name: "publication", widget: "boolean", default: false}
+          - { label: "Image", name: "image", widget: "image" }
+          - {
+              label: "Alt Text",
+              name: "alt",
+              widget: "string",
+              required: false,
+            }
+          - {
+              label: "Caption",
+              name: "caption",
+              widget: "string",
+              required: false,
+            }
+          - {
+              label: "Publikation",
+              name: "publication",
+              widget: "boolean",
+              default: false,
+            }
       - label: "Title"
         name: "title"
         widget: "object"
         required: false
         fields:
-          - { label: "Title", name: "title", widget: "string"}
-          - { label: "Icon", name: "icon", widget: "select", options: ["smile", "heart", "link-external"], required: false}
-          - { label: "Subtitle", name: "subtitle", widget: "string", required: false}
-      - { label: "Disclaimer", name: "disclaimer", widget: "markdown", required: false}
+          - { label: "Title", name: "title", widget: "string" }
+          - {
+              label: "Icon",
+              name: "icon",
+              widget: "select",
+              options: ["smile", "heart", "link-external"],
+              required: false,
+            }
+          - {
+              label: "Subtitle",
+              name: "subtitle",
+              widget: "string",
+              required: false,
+            }
+      - {
+          label: "Disclaimer",
+          name: "disclaimer",
+          widget: "markdown",
+          required: false,
+        }
       - label: "Content Blocks"
         name: "content_blocks"
         widget: "list"
         required: false
         fields:
-        - label: "Paragraph"
-          name: "paragraph"
-          widget: "object"
-          required: false
-          fields:
-            - { label: "Title", name: "title", widget: "string", required: false}
-            - { label: "Body", name: "body", widget: "markdown", required: false}
-        - label: "Image"
-          name: "in_text_image"
-          widget: "object"
-          required: false
-          fields:
-            - { label: "Image", name: "image", widget: "image"}
-            - { label: "Alt Text", name: "alt", widget: "string", required: false}
-            - { label: "Caption", name: "caption", widget: "string", required: false}
-        - label: "External Link"
-          name: "external_link"
-          widget: "object"
-          required: false
-          fields:
-            - { label: "Title", name: "title", widget: "string", required: false}
-            - { label: "Subtitle", name: "subtitle", widget: "string", required: false}
-            - { label: "URL", name: "url", widget: "string", required: false}
+          - label: "Content Block Title (hidden)"
+            name: "content_block_title"
+            widget: "string"
+            default: "Content Block"
+            required: false
+          - label: "Image"
+            name: "in_text_image"
+            widget: "object"
+            required: false
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - {
+                  label: "Alt Text",
+                  name: "alt",
+                  widget: "string",
+                  required: false,
+                }
+              - {
+                  label: "Caption",
+                  name: "caption",
+                  widget: "string",
+                  required: false,
+                }
+          - label: "External Link"
+            name: "external_link_in_text"
+            widget: "object"
+            required: false
+            fields:
+              - {
+                  label: "Title",
+                  name: "title",
+                  widget: "string",
+                  required: false,
+                }
+              - {
+                  label: "Subtitle",
+                  name: "subtitle",
+                  widget: "string",
+                  required: false,
+                }
+              - { label: "URL", name: "url", widget: "string", required: false }
+          - label: "Paragraph"
+            name: "paragraph"
+            widget: "object"
+            required: false
+            fields:
+              - {
+                  label: "Title",
+                  name: "title",
+                  widget: "string",
+                  required: false,
+                }
+              - {
+                  label: "Body",
+                  name: "body",
+                  widget: "markdown",
+                  required: false,
+                }
+      - label: "External Links"
+        name: "external_links"
+        widget: "list"
+        required: false
+        fields:
+          - label: "External Link"
+            name: "external_link"
+            widget: "object"
+            required: false
+            fields:
+              - {
+                  label: "Title",
+                  name: "title",
+                  widget: "string",
+                  required: false,
+                }
+              - {
+                  label: "Subtitle",
+                  name: "subtitle",
+                  widget: "string",
+                  required: false,
+                }
+              - { label: "URL", name: "url", widget: "string", required: false }
