@@ -8,6 +8,7 @@ import Header from "../components/Header";
 import ProjectImage from "../components/ProjectImage";
 import Spacer from "../components/Spacer";
 import ProjectParagraph from "../components/ProjectParagraph";
+import ExternalLink from "../components/ExternalLink";
 
 export async function getStaticPaths() {
   const files = fs.readdirSync(path.join(process.cwd(), "content", "projects"));
@@ -45,6 +46,13 @@ export default function ProjectPage({ html, ...meta }: Props & any) {
                 alt={block.in_text_image.alt}
                 publication={block.in_text_image.publication}
                 caption={block.in_text_image.caption}
+              />
+            )}
+            {block.external_link_in_text && (
+              <ExternalLink
+                href={block.external_link_in_text.url}
+                title={block.external_link_in_text.title}
+                subTitle={block.external_link_in_text.subTitle}
               />
             )}
             {block.paragraph && (
