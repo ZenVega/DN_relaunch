@@ -5,8 +5,8 @@ thumbnail:
 headline:
   title: Alli
   subtitle: Support for abortion pills
-disclaimer: Alli develops accompanying products for patients and medical
-  professionalsto improve the situation of medical pregnancy termination.
+disclaimer: Alli realises accompanying projects to support patients and medical
+  professionals during the process of medication abortion.
 content_blocks:
   - content_block_title: 1st block
     in_text_image:
