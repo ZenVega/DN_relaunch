@@ -1,12 +1,13 @@
 ---
 title: Beyond Pleasure
 thumbnail:
-  publication: true
+  publication: false
   caption: ""
   alt: ""
 headline:
-  title: Insights into your cycle
-  subtitle: An object set breaking menstrual taboos and empowering self-exploration.
+  title: Get busy, get tested
+  subtitle: A concept for STI testing on paper. Quick, easy, and discreet at home
+    alone  or with others.
 disclaimer: Beside Blood is a project that aims to empower people to explore the
   changes in their bodies during their menstrual cycle, while addressing the
   social taboo surrounding menstruation. The project includes objects and a
