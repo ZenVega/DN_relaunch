@@ -2,66 +2,79 @@
 title: Beyond Pleasure
 thumbnail:
   publication: false
-  caption: ""
-  alt: ""
+  caption: © Linn Pulsack
+  alt: Overhead view of a bed with items related to intimacy, including lubricant,
+    dental dam, condom, tissue, and Beyond Pleasure STI Test.
 headline:
   title: Get busy, get tested
   subtitle: A concept for STI testing on paper. Quick, easy, and discreet at home
     alone  or with others.
-disclaimer: Beside Blood is a project that aims to empower people to explore the
-  changes in their bodies during their menstrual cycle, while addressing the
-  social taboo surrounding menstruation. The project includes objects and a
-  booklet that cover different aspects of the cycle, such as changes in cervix,
-  basal body temperature, cervical fluids, and menorrhea. The objects are
-  designed to minimize barriers to self-examination and are aesthetically
-  pleasing accessories that could be displayed in a bathroom. The current
-  3D-printed prototypes could be produced using porcelain, which is
-  hypoallergenic and easy to clean. In the seventies, feminists in the USA built
-  the first women's health centers, where they discussed the cycle,
-  contraception, and abortion, but also examined themselves. The exchange and
-  sharing of knowledge helped them rebel against the social taboo and stand up
-  for sexual self-determination, leading to a new position towards doctors and
-  greater awareness of gynecological practices. Their work served as an
-  inspiration for this project.
+disclaimer: >-
+  The spread of sexually transmitted diseases has increased in recent years,
+  highlighting the need for timely detection to prevent potential consequences
+  such as infertility. However, the stigma and inconvenience of traditional
+  testing methods can discourage many people from getting tested.
+
+
+  Beyond Pleasure offers a simple and discreet solution with paper testing that can be done in the privacy of one's home, alone or with a partner. This revolutionary concept aims to combat the shame and hassle associated with traditional testing methods. The test is easy to use, as paper pressed to varying degrees creates capillaries in the core of the test, allowing the test fluid to be drawn to the test solution and react. Once used, the test can be safely burned.
 content_blocks:
-  - content_block_title: Speculum
+  - content_block_title: Tests Hohlkehle
     paragraph:
-      body: This tool allows for self-exploration of the cervix without the need for
-        assistance. It features a body for insertion and a movable mirror with a
-        light. The end is slightly rounded and oblique for easy insertion.
-      title: Self-exploration speculum
+      body: >-
+        Visually appealing, and user-friendly STD tests can motivate people to
+        get tested more frequently, enabling them to quickly detect and treat
+        transmissible diseases. Barriers such as scheduling
+
+
+        appointments at counseling centers, sending tests for analysis, or seeking confirmation from a doctor can lead individuals to carry the disease for too long, potentially spreading it further.
+
+
+        To break the stigma and reluctance associated with STD testing, it requires innovative design and positioning in easily accessible places like drugstores. By breaking taboos and making testing more
+
+
+        approachable, it is possible to encourage more individuals to prioritize their sexual health and foster a proactive approach to preventing the spread of infections.
+      title: Testing for less spreading
     in_text_image:
-      image: img/speculum_beside_blood_2.jpg
-      alt: Person holding a cervix exploration tool..
+      image: ""
+      alt: Various shots of the Beyond Pleasure test kit, including a test swab,
+        result indicator paper, opened packaging, and a urine sample.
       caption: © Linn Pulsack
-  - content_block_title: Cervical Spoon
+  - content_block_title: Infographic
     in_text_image:
-      image: img/cervical-spoon_beside_blood_1.jpg
-      caption: © Linn Pulsack
-      alt: Person holding a cervical spoon
+      image: ""
+      caption: ""
+      alt: Infographic detailing the functioning of the Beyond Pleasure test.
     paragraph:
-      body:  Cervical fluid can provide information about fertility and potential
-        diseases. This collector is a round stick with a small hole in which
-        cervical fluid can be collected for observation.
-      title: Cervical Spoon
-  - content_block_title: Bowl
+      body: >-
+        The test consists of chromatography paper in multiple layers. The paper
+        is highly absorbent. Water-permeable and impermeable areas are created
+        through blind embossing and wax printing.
+
+
+        By connecting the layers, narrow channels are formed, which absorb the sample - capillary action. This quickly transports the sample to the reaction zone. Along the way, the sample crosses the buffer solution, which ensures its neutralization.
+
+
+        In some test procedures, two different buffers are required to react at different times. This is achieved by creating various channels of different lengths. Sampling windows and reaction windows are located on the front and back, shortening the path the sample needs to go.
+      title: How It Works
+  - content_block_title: Burning Tests
     in_text_image:
       caption: © Linn Pulsack
-      alt: Person is washing a menstrual bowl.
-      image: img/bowl_beside_blood_1.jpg
+      alt: Burning of a Beyond Pleasure STI test
+      image: ""
     paragraph:
-      title: Menstrual Bowl
-      body: This tool is designed to examine menstrual blood. Different colors and
-        clot sizes can provide valuable information. The bowl is aesthetically
-        pleasing and can be used to collect menstrual blood for observation.
-  - content_block_title: Thermometer
+      title: Up in Smoke
+      body: For some people, privacy can be of extrem importance, especially when it
+        comes to sensitive matters like STD tests. Keeping such information
+        discreet can be essential for maintaining confidentiality and simply
+        having the freedom to handle one's health privately. Beyond Pleasure's
+        STD tests can be easily burned, leaving no traces behind.
+  - content_block_title: Abschlussbild
     in_text_image:
       caption: © Linn Pulsack
-      alt: Person with basal body temperature thermometer.
-      image: img/thermometer_beside_blood_1.jpg
+      alt: "Disheveled bed with intimacy-related items: lubricant, dental dam, condom,
+        tissue, and Beyond Pleasure STI Test."
+      image: ""
     paragraph:
-      body: The basal temperature changes during the menstrual cycle and is important
-        for the Symptothermal Method. This thermometer is designed for personal
-        use to track basal temperature changes.
-      title: Basal Thermometer
+      body: ""
+      title: ""
 ---
