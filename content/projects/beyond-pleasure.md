@@ -3,8 +3,9 @@ title: Beyond Pleasure
 thumbnail:
   publication: false
   caption: © Linn Pulsack
-  alt: Overhead view of a bed with items related to intimacy, including lubricant,
-    dental dam, condom, tissue, and Beyond Pleasure STI Test.
+  alt: Overhead view of a box next bed with items related to intimacy, including
+    lubricant, dental dam, condom, tissue, and Beyond Pleasure STI Test.
+  image: img/beyond_pleasure_bettsituation_querformat_39.jpg
 headline:
   title: Get busy, get tested
   subtitle: A concept for STI testing on paper. Quick, easy, and discreet at home
@@ -18,7 +19,7 @@ disclaimer: >-
 
   Beyond Pleasure offers a simple and discreet solution with paper testing that can be done in the privacy of one's home, alone or with a partner. This revolutionary concept aims to combat the shame and hassle associated with traditional testing methods. The test is easy to use, as paper pressed to varying degrees creates capillaries in the core of the test, allowing the test fluid to be drawn to the test solution and react. Once used, the test can be safely burned.
 content_blocks:
-  - content_block_title: Tests Hohlkehle
+  - content_block_title: Hohlkehle
     paragraph:
       body: >-
         Visually appealing, and user-friendly STD tests can motivate people to
@@ -35,13 +36,13 @@ content_blocks:
         approachable, it is possible to encourage more individuals to prioritize their sexual health and foster a proactive approach to preventing the spread of infections.
       title: Testing for less spreading
     in_text_image:
-      image: ""
+      image: img/beyond_pleasure_hohlkehle_querformat138.jpg
       alt: Various shots of the Beyond Pleasure test kit, including a test swab,
         result indicator paper, opened packaging, and a urine sample.
       caption: © Linn Pulsack
   - content_block_title: Infographic
     in_text_image:
-      image: ""
+      image: img/inforgrafik_beyond_pleasure.png
       caption: ""
       alt: Infographic detailing the functioning of the Beyond Pleasure test.
     paragraph:
@@ -60,7 +61,7 @@ content_blocks:
     in_text_image:
       caption: © Linn Pulsack
       alt: Burning of a Beyond Pleasure STI test
-      image: ""
+      image: img/beyond_pleasure_brennender_test_hochformat_13.jpg
     paragraph:
       title: Up in Smoke
       body: For some people, privacy can be of extrem importance, especially when it
@@ -73,7 +74,7 @@ content_blocks:
       caption: © Linn Pulsack
       alt: "Disheveled bed with intimacy-related items: lubricant, dental dam, condom,
         tissue, and Beyond Pleasure STI Test."
-      image: ""
+      image: img/beyond_pleasure_bettsituation_hochformat_50.jpg
     paragraph:
       body: ""
       title: ""
