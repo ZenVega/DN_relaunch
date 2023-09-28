@@ -6,14 +6,15 @@ interface InternalLinkProps {
   href: string;
   title: string;
   icon?: string;
+  subTitle?: string;
 }
 
 const InternalLink: React.FC<InternalLinkProps> = ({
   href,
   title,
   icon,
+  subTitle,
 }: InternalLinkProps) => {
-  console.log(href, title, icon);
   return (
     <a
       target="_blanc"
@@ -30,6 +31,7 @@ const InternalLink: React.FC<InternalLinkProps> = ({
         )}
         <br />
       </span>
+      {subTitle && <span className="leading-4">{subTitle}</span>}
     </a>
   );
 };

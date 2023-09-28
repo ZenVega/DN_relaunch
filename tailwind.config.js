@@ -8,7 +8,11 @@ module.exports = {
     fontFamily: {
       inter: ["Inter", "sans-serif"],
     },
-    extend: {},
+    extend: {
+      width: {
+        "2xfull": "200%",
+      },
+    },
   },
   plugins: [],
 };
