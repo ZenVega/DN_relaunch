@@ -52,6 +52,9 @@ const Navigation = ({ projectsMeta }: NavLinkProps) => {
                 icon={link.icon}
               />
             ))}
+            <div className="bg-black text-white fixed bottom-0 -ml-4 w-full h-14 flex items-center justify-start px-4 font-inter text-xl font-semibold">
+              <span>{"Menue"}</span>
+            </div>
           </div>
           <div id="nav-right" className="p-4 w-screen ">
             <button
@@ -71,6 +74,9 @@ const Navigation = ({ projectsMeta }: NavLinkProps) => {
                 subTitle={project.subTitle}
               />
             ))}
+            <div className="bg-black text-white fixed bottom-0 -ml-4 w-full h-14 flex items-center justify-start px-4 font-inter text-xl font-semibold">
+              <span>{"Projects"}</span>
+            </div>
           </div>
         </div>
       )}

@@ -4,6 +4,11 @@ import { useRouter } from "next/router";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { getIcon } from "../../utils/helpers";
 
+const footerCategories = {
+  projects: "Projects",
+  about: "About",
+};
+
 interface FooterProps {
   projectsMeta: any;
 }
@@ -20,10 +25,6 @@ const Footer = ({ projectsMeta }) => {
     const currentSlug = router.asPath;
     const category = currentSlug.includes("/projects/") ? "projects" : "about";
     setCategory(category);
-
-    //   const currentProjectSlug = router.asPath.includes("/projects/")
-    // ? router.asPath.replace("/projects/", "")
-    // : router.asPath;
 
     if (category === "projects") {
       const currentProjectSlug = currentSlug.replace("/projects/", "");
@@ -42,7 +43,7 @@ const Footer = ({ projectsMeta }) => {
   });
   return (
     <div className="bg-black text-white fixed bottom-0 w-full h-14 flex items-center justify-between px-4 font-inter text-xl font-semibold">
-      <span>{category}</span>
+      <span>{footerCategories[category]}</span>
       {category === "projects" && (
         <div className="text-black bg-white rounded-full flex justify-between w-20 h-10 items-center">
           <Link
