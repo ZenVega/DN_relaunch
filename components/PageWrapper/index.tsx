@@ -1,11 +1,17 @@
 import React from "react";
 import Navigation from "../Navigation";
+import Footer from "../Navigation/Footer";
 
-const PageWrapper = ({ children }) => {
+interface PageWrapperProps {
+  children: React.ReactNode;
+  projectsMeta: any;
+}
+const PageWrapper = ({ children, projectsMeta }) => {
   return (
     <>
-      <Navigation />
+      <Navigation projectsMeta={projectsMeta} />
       <div className="max-w-3xl mx-auto px-4">{children}</div>
+      <Footer projectsMeta={projectsMeta} />
     </>
   );
 };
