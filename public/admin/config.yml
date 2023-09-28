@@ -11,64 +11,8 @@ collections:
         name: "home"
         file: "content/home.md"
         fields:
-          - label: "Hero Image"
-          name: "thumbnail"
-          widget: "object"
-          required: false
-          fields:
-          - { label: "Image", name: "image", widget: "image", required: false }
-          - {
-              label: "Alt Text",
-              name: "alt",
-              widget: "string",
-              required: false,
-            }
-          - {
-              label: "Caption",
-              name: "caption",
-              widget: "string",
-              required: false,
-            }
-          - { label: "Teaser", name: "teaser", widget: "string", required: false }
-      - label: "About"
-        name: "about"
-        file: "content/about.md"
-        fields:
-          - label: "Hero Image"
-            name: "thumbnail"
-            widget: "object"
-            required: false
-            fields:
-            - { label: "Image", name: "image", widget: "image", required: false }
-            - {
-                label: "Alt Text",
-                name: "alt",
-                widget: "string",
-                required: false,
-              }
-            - {
-                label: "Caption",
-                name: "caption",
-                widget: "string",
-                required: false,
-              }
-          - label: "Paragraph"
-            name: "paragraph"
-            widget: "object"
-            required: false
-            fields:
-              - {
-                  label: "Title",
-                  name: "title",
-                  widget: "string",
-                  required: false,
-                }
-              - {
-                  label: "Body",
-                  name: "body",
-                  widget: "markdown",
-                  required: false,
-                }
+          - { label: "Title", name: "title", widget: "string", required: false }
+          - { label: "Body", name: "body", widget: "markdown", required: false }
   - name: "projects"
     label: "Projects"
     folder: "content/projects"
