@@ -4,13 +4,13 @@ import matter from "gray-matter";
 import { marked } from "marked";
 import { mangle } from "marked-mangle";
 import { gfmHeadingId } from "marked-gfm-heading-id";
-import Header from "../components/Header";
-import ProjectImage from "../components/ProjectImage";
-import Spacer from "../components/Spacer";
-import ProjectParagraph from "../components/ProjectParagraph";
-import ExternalLink from "../components/ExternalLink";
-import PageWrapper from "../components/PageWrapper";
-import { getProjectData } from "../utils/getProjectData";
+import Header from "../../components/Header";
+import ProjectImage from "../../components/ProjectImage";
+import Spacer from "../../components/Spacer";
+import ProjectParagraph from "../../components/ProjectParagraph";
+import ExternalLink from "../../components/ExternalLink";
+import PageWrapper from "../../components/PageWrapper";
+import { getProjectData } from "../../utils/getProjectData";
 
 export async function getStaticPaths() {
   const files = fs.readdirSync(path.join(process.cwd(), "content", "projects"));

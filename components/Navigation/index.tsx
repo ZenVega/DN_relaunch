@@ -66,7 +66,7 @@ const Navigation = ({ projectsMeta }: NavLinkProps) => {
             </button>
             {projectsMeta.map((project) => (
               <InternalLink
-                href={`/${project.slug}`}
+                href={`/projects/${project.slug}`}
                 title={project.title}
                 subTitle={project.subTitle}
               />
